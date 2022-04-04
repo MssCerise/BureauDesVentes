@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ENI-Encheres</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+	<jsp-file>/WEB-INF/jsp/login.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/JSPLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+	<jsp-file>/WEB-INF/jsp/register.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/JSPRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AccueilConnected</servlet-name>
+	<jsp-file>/WEB-INF/jsp/accueilConnected.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AccueilConnected</servlet-name>
+  	<url-pattern>/JSPAccueilConnected</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AccueilDeconnected</servlet-name>
+	<jsp-file>/WEB-INF/jsp/accueilDeconnected.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AccueilDeconnected</servlet-name>
+  	<url-pattern>/JSPAccueilDeconnected</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Profil</servlet-name>
+	<jsp-file>/WEB-INF/jsp/profil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Profil</servlet-name>
+  	<url-pattern>/JSPMonProfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateProfil</servlet-name>
+	<jsp-file>/WEB-INF/jsp/updateProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateProfil</servlet-name>
+  	<url-pattern>/JSPUpdateProfil</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DeleteProfil</servlet-name>
+	<jsp-file>/WEB-INF/jsp/deleteProfil.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteProfil</servlet-name>
+  	<url-pattern>/JSPDeleteProfil</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>VendreArticle</servlet-name>
+	<jsp-file>/WEB-INF/jsp/vendreArticle.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VendreArticle</servlet-name>
+  	<url-pattern>/JSPVendreArticle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DetailVente</servlet-name>
+	<jsp-file>/WEB-INF/jsp/detailVente.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DetailVente</servlet-name>
+  	<url-pattern>/JSPDetailVente</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RemporterVente</servlet-name>
+	<jsp-file>/WEB-INF/jsp/remporterVente.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RemporterVente</servlet-name>
+  	<url-pattern>/JSPRemporterVente</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateVente</servlet-name>
+	<jsp-file>/WEB-INF/jsp/updateVente.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateVente</servlet-name>
+  	<url-pattern>/JSPUpdateVente</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
